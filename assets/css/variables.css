@@ -1,0 +1,105 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&family=Sora:wght@100;200;300;400;500;600;700;800&display=swap');
+/* CSS Variables */
+:root {
+    --primary-color: #27AE60;
+    --secondary-color: #333333;
+    --third-color: #6FCF97;
+    --white-color: #FFFFFF;
+    /* font size */
+    --text-lg: 60px;
+    --text-md: 23px;
+    --text-base: 13px;
+    /* font weight */
+    --font-thin: 300;
+    --font-base: 400;
+    --font-medium: 500;
+    --font-bold: 700;
+    /* box shadow */
+    --main-shadow:0 20px 40px rgba(0,0,0,0.08);
+    /* border-radius */
+    --main-radius: 10px;
+    /* transition */
+    --animate: all 0.3s ease-in-out;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Rubik', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+h1,h2 {
+    font-size: var(--text-lg);
+    color: var(--secondary-color);
+    line-height: 71px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+h3 {
+    font-size: var(--font-medium);
+    color: var(--primary-color);
+    margin-bottom: 13px;
+    text-transform: capitalize;
+}
+p {
+    font-size: var(--text-base);
+    font-weight: var(--font-base);
+    color: var(--secondary-color);
+    line-height: 159.1%;
+}
+input:focus {
+    outline: none;
+}
+
+img {
+    width: 100%;
+}
+.py-80 {
+    padding: 100px 0;
+}
+.container {
+    width: 100%;
+    max-width: 1536px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+.grid {
+    display: grid;
+    gap: 20px;
+    
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn {
+    position: relative;
+    padding: 13px 35px;
+    display: inline-block;
+    width: auto;
+    font-size: var(--text-base);
+    font-weight: var(--font-base);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 50px;
+    letter-spacing: 1.1px;
+    transition: var(--animate);
+    text-align: center;
+    text-transform: capitalize;
+    border: 0;
+    cursor: pointer;
+}
+.btn:hover {
+    transform: scale(1.02);
+}

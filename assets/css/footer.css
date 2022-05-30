@@ -1,0 +1,57 @@
+@import "./variables.css";
+
+footer {
+    background-color: #F2F2F2;
+}
+.footer-wrapper {
+    padding: 80px 0;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.footer-about {
+    flex: 0 0 300px;
+    padding-right: 100px;
+}
+.footer-logo {
+    margin-bottom: 10px;
+    display: block;
+}
+.footer-wrapper .footer-col {
+flex: 0 0 200px;
+}
+.footer-col h5 {
+    font-size: 15px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    font-weight: var(--font-bold);
+    }
+.footer-col ul li {
+    margin-bottom: 15px;
+    transition: var(--animate);
+}
+.footer-col ul li:hover {
+    transform: translateY(-3px);
+}
+.footer-col ul li a {
+    font-size: var(--text-base);
+    color: var(--secondary-color);
+    transition: var(--animate);
+    text-transform: capitalize;
+}
+.footer-col ul li a:hover {
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
+}
+.copyright {
+    padding: 25px 0;
+    text-align: center;
+    border-top: 1px solid var(--primary-color);
+}
+.copyright p {
+    font-size: var(--text-base);
+    color: var(--secondary-color);
+    font-weight: var(--font-base);
+}
+.copyright p a {
+    color: var(--primary-color);
+}

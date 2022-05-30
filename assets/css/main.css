@@ -1,0 +1,86 @@
+@import "./variables.css";
+@import "./navbar.css";
+@import "./hero.css";
+@import "./menu.css";
+@import "./footer.css";
+@import "./breakpoints.css";
+
+section {
+    width: 100%;
+}
+
+.content-col p {
+    margin-bottom: 30px;
+}
+.content-col-image img {
+    width: 80%;
+}
+
+.services .content-col {
+    padding-left: 75px;
+}
+
+.getapp-wrapper {
+    background-color: var(--third-color);
+    border-radius: var(--main-radius);
+    padding: 50px 40px;
+    align-items: center;
+}
+.getapp-wrapper .img-col img {
+    width: 80%;
+}
+.getapp-content h2 {
+    font-weight: 500;
+    font-size: 45px;
+}
+.getapp-wrapper h3,
+.getapp-wrapper h2,
+.getapp-wrapper p {
+    color: var(--white-color);
+}
+.getapp-content a {
+    width: 140px;
+    display: inline-block;
+    margin: 50px 25px 0 0;
+    transition: var(--animate);
+}
+.getapp-content a:last-child {
+    margin-right: 0px;
+}
+.getapp-content a:hover {
+    transform: scale(1.02);
+}
+
+.scrollup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-color);
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 50px;
+    position: fixed;
+    bottom: -10px;
+    right: 30px;
+    transition: background-color 0.3s, opacity 0.5s, visibility 0.5s, bottom 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    cursor: pointer;
+    box-shadow: var(--main-shadow);
+}
+.scrollup img {
+    width: 70%;
+}
+.scrollup.show {
+    bottom: 30px;
+    opacity: 1;
+    visibility: visible;
+}
+.store-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,117 @@
+@import "./variables.css";
+
+header {
+    height: 83px;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background: white;
+    transition: var(--animate);
+
+}
+header.fixed {
+    height: 90px;
+    box-shadow: var(--main-shadow);
+}
+header.fixed nav {
+    height: 90px;
+    padding: 15px 0;
+}
+nav {
+    height: 83px;
+    width: 100%;
+    padding: 20px 0;
+    transition: var(--animate);
+}
+nav .logo {
+    width: 200px;
+}
+.navigation-bar ul li {
+    position: relative;
+    display: inline-block;
+    margin: 0 25px;
+}
+.navigation-bar ul li:last-child {
+    margin-right: 0;
+}
+.navigation-bar ul li a {
+    position: relative;
+    font-size: var(--text-base);
+    color: var(--secondary-color);
+    font-weight: var(--font-base);
+    text-transform: capitalize;
+    transition: var(--animate);
+}
+.navigation-bar ul li a:hover,
+.navigation-bar ul li.active a {
+    color: var(--primary-color);
+}
+.navigation-bar ul li.active::after {
+    content: "";
+    position: absolute;
+    top: auto;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 5px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+}
+.navigation-bar ul li a.btn {
+    color: var(--white-color);
+}
+.burger {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+.burger span {
+    display: block;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 3px;
+    margin-bottom: 4px;
+    border-radius: var(--main-radius);
+    transition: margin-bottom 0.3s ease-in-out;
+}
+.burger span:last-child {
+    margin-bottom: 0px;
+}
+.burger:hover span {
+    margin-bottom: 5px;
+}
+@media (min-width: 991px) {
+    .navigation-bar {
+      display: block !important;
+    }
+}
+@media (max-width: 990px) {
+    .burger {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+    .navigation-bar {
+        display: none;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        top: 90px;
+        width: 100%;
+        background-color: var(--secondary-color);
+        padding: 20px 0;
+        z-index: 2;
+    }
+    .navigation-bar ul li {
+      display: block;
+      margin: 15px 0;
+    }
+    .navigation-bar ul li a {
+      color: var(--third-color);
+    }
+}
